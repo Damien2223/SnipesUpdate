@@ -1,6 +1,16 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "SnipeWare", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "SnipeWare (Outdated) version", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-game.Players.LocalPlayer:Kick(Outdated script)
+local mainTab = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
 
+mainTab:AddButton({
+	Name = "Click here to get snipeware.!",
+	Callback = function()
+      		Game.Players.LocalPlayer:Kick("You got scammed if u want the new version please go to our Discord Server")
+  	end    
+})
